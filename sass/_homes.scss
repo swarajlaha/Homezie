@@ -8,11 +8,16 @@
 
 .home {
     background-color: $color-grey-light-1;
+    display: grid;
+    grid-template-columns: repeat(2, 1);
     &__img {
         width: 100%;
+        grid-column: 1 / -1;
     }
     &__like {}
-    &__name {}
+    &__name {
+        grid-column: 1 / -1;
+    }
     &__Location,
     &__rooms,
     &__area,
@@ -23,5 +28,8 @@
             width: 2rem;
         }
         p {}
+    }
+    &__btn {
+        grid-column: 1 / -1;
     }
 }
